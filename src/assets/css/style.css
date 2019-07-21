@@ -300,8 +300,9 @@ h6 {
 }
 
 .project1 {
-      background: url(https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80) no-repeat 50% 50%;
+     background : url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/lannister.png?alt=media&token=6216242d-b14b-4da2-87f5-52eea8aa8b6c) no-repeat 50% 50%;
       background-size: cover;
+      width: 800px;
 }
 
 .project1::after {
@@ -312,8 +313,8 @@ h6 {
       color: #fff;
       display: block;
       top: 8%;
-      left: -60%;
-      right: 0;
+      
+      right: 40%;
       bottom: 0;
 }
 
