@@ -7,10 +7,16 @@
           </span>
 
           <ul id="menu">
-                <li><a routerLink="/">home<span>.</span></a></li>
+                <button (click)="toggleTheme()">Cambiar theme</button>
+                <li><a routerLink="/">home<span>.</span></a>
+                  <div id="fill"></div> 
+            </li>
                
-                <li><a routerLink="/about">bio<span>.</span></a></li>
-                <li><a routerLink="/contact">contact<span>.</span></a></li>
+                <li><a routerLink="/about">bio<span>.</span></a>
+                  <div id="fill"></div> 
+            </li>
+                <li><a routerLink="/contact">contact<span>.</span></a>
+                <div id="fill"></div> </li>
           </ul>
 
           <div id="toggle">

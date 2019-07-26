@@ -118,6 +118,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "portalofio-angular-daniel"
+    }
+  },
+  "defaultProject": "portalofio-angular-daniel",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
