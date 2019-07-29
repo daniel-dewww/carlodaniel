@@ -3,11 +3,21 @@
     <!--------------- navbar starts here --------------->
     <nav>
           <span id="brand">
-                <a routerLink="/">{{_is.info.nombre_corto}}</a>
+                <a routerLink="/">
+                <!--  {{_is.info.nombre_corto}}-->
+                <div class="image" ></div>
+              
+            
+            
+            </a>
           </span>
-
+          <div class="themeToggle">
+          <a (click)="returnLight()">Light</a>
+          <div class="horizontal"></div>
+          <a  (click)="returnDark()">Dark</a>
+      </div>
           <ul id="menu">
-                <button (click)="toggleTheme()">Cambiar theme</button>
+                
                 <li><a routerLink="/">home<span>.</span></a>
                   <div id="fill"></div> 
             </li>
@@ -15,8 +25,7 @@
                 <li><a routerLink="/about">bio<span>.</span></a>
                   <div id="fill"></div> 
             </li>
-                <li><a routerLink="/contact">contact<span>.</span></a>
-                <div id="fill"></div> </li>
+                
           </ul>
 
           <div id="toggle">
@@ -32,7 +41,7 @@
                 <li><a routerLink="/">home<span>.</span></a></li>
                
                 <li><a routerLink="/about">bio<span>.</span></a></li>
-                <li><a routerLink="/contact">contact<span>.</span></a></li>
+      
           </ul>
     </div>
 

@@ -1,8 +1,9 @@
+$logo: url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/logotipo.png?alt=media&token=7f34b24e-6a5e-4bf8-96a9-3f0f7cfa3c42);
 /*--------------- navigation --------------- */
 nav {
     width: 100%; 
     background-color: var(--background-light);
-    height: 80px;
+    height: 100px;
     position: fixed;
     z-index: 1;
 }
@@ -15,9 +16,17 @@ nav #brand {
     font-weight: bold;
 }
 
-nav #brand a {
-    color: var(--foreground-default);
-    transition: all 0.3s ease-out;
+nav #brand a .image {
+    width: 100px;
+    height: 53px;  
+    margin-top: 20px;  
+    -webkit-transition: all 0.3s ease-out;  
+    transition: all 0.3s ease-out;  
+    background: var(--image);  
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 nav #brand a:hover {
@@ -38,6 +47,7 @@ nav #menu li {
     line-height: 80px;
     position: relative;
     transition: all 0.3s ease-out;
+    font-family:var(--tipografia);
 }
 
 nav #menu li span {
@@ -65,6 +75,7 @@ nav #menu li a:hover {
     transition: all 0.3s ease-out;
     visibility: hidden;
     opacity: 0;
+    color: var(--foreground-default);  
 }
 
 .close-btn {
@@ -74,6 +85,7 @@ nav #menu li a:hover {
     z-index: 2;
     cursor: pointer;
     top: -2px;
+    color: var(--foreground-default);  
     line-height: 80px;
 }
 
@@ -81,7 +93,7 @@ nav #menu li a:hover {
     z-index: 1;
     top: 0px;
     position: fixed;
-    background: #000;
+    background-color: var(--background-light);
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -115,7 +127,7 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-    color: #000;
+    color: var(--foreground-default);  
 }
 
 #resize #menu li a:hover {
@@ -126,6 +138,12 @@ nav #menu li a:hover {
     visibility: visible;
     opacity: 1;
 }
+@media(max-width: 897px) {
+    nav #brand a .image{
+        width: 112px;
+        height: 60px;
+    }
+}
 
 @media(max-width: 768px) {
     #toggle {
@@ -134,7 +152,9 @@ nav #menu li a:hover {
           margin-top: 6px;
           margin-right: 4px;
     }
-
+    #toggle span {
+        color: var(--foreground-default); 
+    }
     nav #brand {
           margin-left: 24px;
     }
@@ -158,16 +178,58 @@ nav #menu li a:hover {
           visibility: hidden !important;
     }
 }
-
+@media(max-width: 542px) {
+    nav #brand a .image{
+        width: 80px;
+        height: 43px;
+    }
+}
+@media(max-width: 442px) {
+    .themeToggle{
+        left: 40%;
+    }
+}
+@media(max-width: 369px) {
+    
+    .themeToggle{
+        
+        font-size:14px;
+    }
+}
+@media(max-width: 333px) {
+    nav #brand a .image{
+        width: 60px;
+        height: 32px;
+    }
+    .themeToggle{
+        left: 35%;
+    }
+}
 #fill{
     height: 5px;
     width:40px;
-    background-color: #7cfc38;
+    background-color: var(--foreground-primary);
     position:absolute;
     top:50%;
-    left:50%;
+    left:55%;
     transform:translate(-50%,-50%);
     z-index:-1;
     
 
+}
+
+.themeToggle{
+    position: absolute;
+    left: 45%;
+    top: 20px;
+}
+.horizontal{
+    border-left: 25px solid var(--foreground-default);
+height: 3px;
+display: inline-flex;
+margin: 5px;
+}
+.themeToggle a{
+    color: var(--foreground-default);
+    cursor:pointer;
 }

@@ -13,13 +13,14 @@ declare var $: any;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  
+  returndark:void = this.returnDark();
+  returnlight:void = this.returnLight();
   constructor(public _is:InformacionService,private themeService: ThemeService) { }
 
   ngOnInit() {
     this.animacionHeader();
     this.menuToggle();
-    
+    this.returnLight()
   }
   animacionHeader(): void {
     TweenMax.from("#brand", 2, {
@@ -60,7 +61,15 @@ TweenMax.staggerFrom("#menu li a", 4, {
     } else {
       this.themeService.setDarkTheme();
     }
-
-    
   }
+    returnDark(){
+      
+        this.themeService.setDarkTheme();
+      
+  }
+  returnLight(){
+   
+      this.themeService.setLightTheme();
+      
+    }
 }
