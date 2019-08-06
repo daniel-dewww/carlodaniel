@@ -23,14 +23,31 @@ export class HeaderComponent implements OnInit {
     this.returnLight()
   }
   animacionHeader(): void {
-    TweenMax.from("#brand", 2, {
+    TweenMax.from("#brand", 1.8, {
       delay: 0.4,
-      y: 10,
+      x: 10,
       opacity: 0,
       ease: Expo.easeInOut
 })
-
-TweenMax.staggerFrom("#menu li a", 4, {
+TweenMax.from("#fill", 2, {
+  delay: 0.4,
+  y: 10,
+  opacity: 0,
+  ease: Expo.easeInOut
+})
+TweenMax.from(".themeToggle", 2, {
+  delay: 0.4,
+  y: 10,
+  opacity: 0,
+  ease: Expo.easeInOut
+})
+TweenMax.from(".image", 2, {
+  delay: 0.4,
+  y: 10,
+  opacity: 0,
+  ease: Expo.easeInOut
+})
+TweenMax.staggerFrom("#menu li a", 2, {
       delay: 0.4,
       opacity: 0,
       ease: Expo.easeInOut

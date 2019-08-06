@@ -15,6 +15,10 @@ import { AboutComponent } from './componentes/about/about.component';
 import { ContactComponent } from './componentes/contact/contact.component';
 import { ProjectComponent } from './componentes/project/project.component';
 
+//firebase 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestore} from 'angularfire2/firestore';
+import { environment } from '../environments/environment';
 //SERVICIOS
 import {InformacionService} from './services/informacion.service';
 @NgModule({
@@ -26,13 +30,14 @@ import {InformacionService} from './services/informacion.service';
     AboutComponent,
     
     ContactComponent,
-    ProjectComponent
+    ProjectComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     app_routing,
-    HttpModule 
+    HttpModule
 
   ],
   providers: [

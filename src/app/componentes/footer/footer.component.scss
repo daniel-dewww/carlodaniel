@@ -34,6 +34,29 @@ cursor: pointer;
     font-size: 18px;
     padding-left: 20px;
 }
+#fill{
+    height: 5px;
+width: 50px;
+background-color: var(--foreground-primary);
+position: relative;
+top: -40%;
+left: 40%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+z-index: -1;
+    
+
+}
+#media ul{
+    display: inline-flex;
+}
+
+#media li a{
+    font-weight: lighter;
+    color: var(--foreground-default);
+    font-size: 18px;
+    text-decoration:none;
+}
 
 #fb::before {
     display: inline-block;

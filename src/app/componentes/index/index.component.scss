@@ -1,5 +1,8 @@
 
 /*--------------- hero section --------------- */
+.container-fluid{
+ padding: 30px;
+}
 .hero {
     height: 100vh;
     display: flex;
@@ -76,19 +79,25 @@ h6 {
 }
 
 .project {
-    height: 500px;
+    width: 450px;
+
+height: 400px;
 }
 
 .project1 {
-   background : url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/lannister.png?alt=media&token=6216242d-b14b-4da2-87f5-52eea8aa8b6c) no-repeat 50% 50%;
-    background-size: cover;
-    width: 800px;
-     cursor:pointer;
-}
+background: url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/01-instagram.png?alt=media&token=a09a0a25-4991-43e3-b41d-7edeeb83c129) no-repeat 50% 50%;
+background-size: auto;
+background-size: cover;
+width: 450px;
 
+height: 400px;
+cursor: pointer;
+
+}
+/*
 .project1::after {
     content: "Lannister";
-    font-family: "Roboto Mono";
+    
     font-size: 36px;
     position: relative;
     color: var(--foreground-default);
@@ -97,64 +106,67 @@ h6 {
     cursor:pointer;
     right: 40%;
     bottom: 0;
+}*/
+.botones li  a{
+    color: var(--foreground-default);
 }
+.botones li  a:hover{
+    text-decoration:none;
+}
+#fill{
+    height: 5px;
+    width:40px;
+    background-color: var(--foreground-primary);
+    position:absolute;
+    top:50%;
+    left:2%;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+    
 
+}
+.botones li{
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 80px;
+    position: relative;
+    margin: 0 20px;
+font-size: 1.1em;
+}
 .project2 {
-    background: url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/stark.png?alt=media&token=4872e563-d039-470c-9283-dfed95d9880f) no-repeat 50% 50%;
-    background-size: cover;
-    width: 800px;
-    cursor:pointer;
+    background: url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/02-instagram.png?alt=media&token=9b839f07-3599-462b-b96f-c413fd47f92d) no-repeat 50% 50%;
+    background-size: auto;
+background-size: cover;
+width: 450px;
+
+height: 400px;
+cursor: pointer;
+
 }
 
-.project2::after {
-    content: "Stark";
-font-family: "Roboto Mono";
-font-size: 36px;
-position: absolute;
-color: var(--foreground-default);
-display: block;
-top: 80%;
-right: -30%;
-bottom: 0;
-cursor:pointer;
-}
+
 
 .project3 {
-    background: url(https://images.unsplash.com/photo-1482501157762-56897a411e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) no-repeat 50% 50%;
+    background: url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/time.png?alt=media&token=dfbc187e-bf18-49b4-a3d4-b52afc7b6b0d) no-repeat 50% 50%;
     background-size: cover;
     cursor:pointer;
+    width: 450px;
+
+height: 400px;
 }
 
-.project3::after {
-    content: "never again.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 80%;
-    left: -50%;
-    right: 0;
-    bottom: 0;
-}
+
 
 .project4 {
-    background: url(https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
+    background: url(https://firebasestorage.googleapis.com/v0/b/portafolio-e251f.appspot.com/o/templates.png?alt=media&token=e85eedc7-75f2-4f6b-bfaa-17a29d2fb1cc) no-repeat 50% 50%;
     background-size: cover;
+    width: 450px;
+
+height: 400px;
 }
 
-.project4::after {
-    content: "departure.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 10%;
-    left: 90%;
-    right: 0;
-    bottom: 0;
-}
+
 @media(max-width: 945px) {
     
     .hero h1 {
@@ -165,6 +177,15 @@ cursor:pointer;
     .hero h1 {
         font-size: 2.8em;
 }}
+@media(max-width: 768px) {
+    .project{
+       
+        max-width: 450px;
+        height: 350px;
+    }
+
+
+    }
 @media(max-width: 659px) {
     
     .hero h1 {
